@@ -1,0 +1,50 @@
+@import "src/assets/scss/abstracts/_variables";
+
+.main {
+  width: 100%;
+  min-height: 12rem;
+  font-family: $font-roboto;
+  background-color: $background-1;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .logoContainer {
+      padding: 1rem 5rem;
+    }
+
+    .navContainer {
+      margin-left: auto;
+      a {
+        color: $color1;
+        font-size: 1.8rem;
+        margin-right: 3rem;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        color: $color2;
+      }
+    }
+
+    .startBtn {
+      margin-right: 5rem;
+      display: inline-block;
+      padding: 1.4rem 2rem;
+      border: none;
+      border-radius: 2.5rem;
+      color: $colorWhite;
+      background-color: $color2;
+      font-size: 1.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .startBtn:hover {
+        color: $background-1;
+        background-color: $background-2;
+    }
+  }
+}
