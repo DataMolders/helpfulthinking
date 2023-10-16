@@ -11,7 +11,8 @@
     align-items: center;
 
     .logoContainer {
-      padding: 1rem 5rem;
+      margin: 1.8rem 0;
+      margin-left: 11.2rem;
     }
 
     .navContainer {
@@ -30,7 +31,7 @@
     }
 
     .startBtn {
-      margin-right: 5rem;
+      margin-right: 8rem;
       display: inline-block;
       padding: 1.4rem 2rem;
       border: none;
@@ -43,8 +44,8 @@
     }
 
     .startBtn:hover {
-        color: $background-1;
-        background-color: $background-2;
+      color: $background-1;
+      background-color: $background-2;
     }
   }
 }
