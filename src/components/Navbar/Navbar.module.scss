@@ -21,6 +21,7 @@
         color: $color1;
         font-size: 1.8rem;
         margin-right: 3rem;
+        font-family: $font-nunito;
         text-decoration: none;
         font-weight: 700;
       }
@@ -31,6 +32,7 @@
     }
 
     .startBtn {
+      font-family: $font-nunito;
       margin-right: 8rem;
       display: inline-block;
       padding: 1.4rem 2rem;

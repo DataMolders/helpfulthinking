@@ -6,7 +6,13 @@ function Homepage() {
   return (
     <div className={styles.main}>
       <div className={styles.container}>
-        TESSsssssss
+        <div className={styles.left}>
+          <div className={styles.subtitle}>Salud Mental Online</div>
+          <div className={styles.title}>psiquiatras y psicólog@s</div>
+          <div className={styles.description}>a un click de ti</div>
+          <button className={styles.startBtn}>Empezar</button>
+
+        </div>
       </div>
     </div>
   )
