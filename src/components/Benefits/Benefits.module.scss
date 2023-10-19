@@ -1,0 +1,51 @@
+@import "src/assets/scss/abstracts/_variables";
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: $background-2;
+  
+
+  .container {
+    margin-left: 11.2rem;
+    .title {
+      font-family: $font-pt;
+      font-size: 4.8rem;
+      letter-spacing: -0.1rem;
+      color: $color3;
+    }
+
+    .text {
+      font-family: $font-nunito;
+      color: $color3;
+      font-size: 1.8rem;
+    }
+    .top {
+      .stepContainer {
+      }
+
+      .startBtn {
+        font-family: $font-nunito;
+        margin-right: 8rem;
+        display: inline-block;
+        padding: 1.7rem 2rem;
+        border: none;
+        border-radius: 3rem;
+        color: $colorWhite;
+        background-color: $color2;
+        font-size: 1.8rem;
+        font-weight: 700;
+        cursor: pointer;
+        width: 15.2rem;
+      }
+
+      .startBtn:hover {
+        color: $background-1;
+        background-color: $background-2;
+      }
+    }
+
+    .bottom {
+    }
+  }
+}
