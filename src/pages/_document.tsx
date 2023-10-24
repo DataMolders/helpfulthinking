@@ -16,6 +16,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script src="../components/Navbar/scroll.js"></script>
       </body>
     </Html>
   )

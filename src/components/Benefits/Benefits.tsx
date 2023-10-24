@@ -9,7 +9,7 @@ import icono3 from "@/assets/images/icono3.png"
 
 function Benefits() {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id="benefits">
             <div className={styles.container}>
                 <div className={styles.top}>
                     <div className={styles.title}>Cómo funciona</div>

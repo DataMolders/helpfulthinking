@@ -19,7 +19,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <nav className={styles.navContainer}>
-                    <Link href="#">Funcionamiento</Link>
+                    <Link href="#benefits">Funcionamiento</Link>
                     <Link href="#">Áreas de tratamiento</Link>
                     <Link href="#">Quiénes somos</Link>
                     <Link href="#">FAQ's</Link>
