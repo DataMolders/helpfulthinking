@@ -12,7 +12,7 @@ function Benefits() {
                         <div className={styles.text}>Rellena el formulario de evaluación</div>
                     </div>
                     <div className={styles.stepContainer}>
-                        <div className={styles.text}>Se te asigna el personal</div>
+                        <div className={styles.text}>Se te asigna a un profesional</div>
                     </div>
                     <div className={styles.stepContainer}>
                         <div className={styles.text}>Empieza tu terapia online</div>
@@ -20,13 +20,30 @@ function Benefits() {
                     <button className={styles.startBtn}>Empezar</button>
                 </div>
                 <div className={styles.bottom}>
-                    <div className={styles.title}>Beneficios</div>
-                    <div className={styles.text}>- Consulta y atención especializada online</div>
-                    <div className={styles.text}>- Evita desplazamientos y mejora la conciliación horaria</div>
-                    <div className={styles.text}>- Equipo de psicólogos y psiquiatras con experiencia asistencial</div>
-                    <div className={styles.text}>- Canal de comunicación seguro y confidencial</div>
-                    <div className={styles.text}>- Prescripción online</div>
+                    <div className={`${styles.title} ${styles.margin}`}>Beneficios</div>
+
+                    <div className={styles.listContainer}>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Atención profesional personalizada
+                        </div>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Sin tiempo de espera ni desplazamientos
+                        </div>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Resolución de cualquier tipo de situación
+                        </div>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Canal de comunicación seguro y confidencial
+                        </div>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Prescripción de recetas online
+                        </div>
+                        <div className={`${styles.blackText} ${styles.listItem}`}>
+                            <span className={styles.circle}></span>Acceso a tu historial médico online
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
