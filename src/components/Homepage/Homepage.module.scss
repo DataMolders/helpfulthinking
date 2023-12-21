@@ -1,7 +1,7 @@
 @import "src/assets/scss/abstracts/_variables";
 
 .main {
-  height: 60vh;
+  height: 56vh;
   width: 100%;
   background-color: $background-1;
   color: $color1;
@@ -11,9 +11,9 @@
 
   .container {
     .left {
+      margin-top: 2.2rem;
       margin-left: 11.2rem;
       max-width: 60rem;
-      max-height: 40.9rem;
       line-height: 5.8rem;
 
       .subtitle {
