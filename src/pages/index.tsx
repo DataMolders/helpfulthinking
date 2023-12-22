@@ -4,6 +4,10 @@ import styles from '@/styles/Home.module.css'
 import Homepage from '@/components/Homepage/Homepage'
 import Benefits from '@/components/Benefits/Benefits'
 import Treatment from '@/components/Treatment/Treatment'
+import Equip from '@/components/Equip/Equip'
+import Help from '@/components/Help/Help'
+import Faqs from '@/components/Faqs/Faqs'
+import Footer from '@/components/Footer/Footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,6 +26,10 @@ export default function Home() {
           <Homepage />
           <Benefits />
           <Treatment />
+          <Equip />
+          <Help />
+          <Faqs />
+          <Footer />
         </div>
       </main>
     </>
