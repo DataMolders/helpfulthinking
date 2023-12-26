@@ -6,7 +6,6 @@ import styles from "./Benefits.module.scss"
 import benefits1 from "@/assets/images/benefits1.png"
 import benefits2 from "@/assets/images/benefits2.png"
 import benefits3 from "@/assets/images/benefits3.png"
-import benefitsfondo from "@/assets/images/benefitsfondo.png"
 
 function Benefits() {
     return (
