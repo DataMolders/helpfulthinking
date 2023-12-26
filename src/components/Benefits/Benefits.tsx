@@ -1,24 +1,45 @@
 import React from 'react'
+import Image from 'next/image'
 
 import styles from "./Benefits.module.scss"
+
+import benefits1 from "@/assets/images/benefits1.png"
+import benefits2 from "@/assets/images/benefits2.png"
+import benefits3 from "@/assets/images/benefits3.png"
+import benefitsfondo from "@/assets/images/benefitsfondo.png"
 
 function Benefits() {
     return (
         <div className={styles.main}>
             <div className={styles.container}>
+                <div className={styles.title}>Cómo funciona</div>
                 <div className={styles.top}>
-                    <div className={styles.title}>Cómo funciona</div>
                     <div className={styles.stepContainer}>
+                        <Image
+                            src={benefits1}
+                            alt="Benefits 1"
+                            className={styles.logoImage}
+                        />
                         <div className={styles.text}>Rellena el formulario de evaluación</div>
                     </div>
                     <div className={styles.stepContainer}>
+                        <Image
+                            src={benefits2}
+                            alt="Benefits 2"
+                            className={styles.logoImage}
+                        />
                         <div className={styles.text}>Se te asigna a un profesional</div>
                     </div>
                     <div className={styles.stepContainer}>
+                        <Image
+                            src={benefits3}
+                            alt="Benefits 3"
+                            className={styles.logoImage}
+                        />
                         <div className={styles.text}>Empieza tu terapia online</div>
                     </div>
-                    <button className={styles.startBtn}>Empezar</button>
                 </div>
+                <button className={styles.startBtn}>Empezar</button>
                 <div className={styles.bottom}>
                     <div className={`${styles.title} ${styles.margin}`}>Beneficios</div>
 

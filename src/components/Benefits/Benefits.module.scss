@@ -2,9 +2,12 @@
 
 .main {
   width: 100%;
-  height: 100vh;
-  background-color: $background-2;
-  
+  height: 90vh;
+  // background-color: $background-2;
+  background-image: url("../../assets/images/benefitsfondo.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
 
   .container {
     margin-left: 11.2rem;
@@ -12,51 +15,54 @@
       font-family: $font-pt;
       font-size: 4.8rem;
       letter-spacing: -0.1rem;
-      color: $color3;
+      color: $background-1;
     }
 
     .margin {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     .text {
       font-family: $font-nunito;
-      color: $color3;
+      color: $background-1;
       font-size: 2.2rem;
     }
 
     .top {
+      display: flex;
+      justify-content: space-between;
+
       .stepContainer {
+        margin-right: 12rem;
       }
+    }
+    .startBtn {
+      font-family: $font-nunito;
+      margin-right: 8rem;
+      display: inline-block;
+      padding: 1.7rem 2rem;
+      border: none;
+      border-radius: 3rem;
+      color: $colorWhite;
+      background-color: $color2;
+      font-size: 1.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 15.2rem;
+      margin: 5rem 0 8rem 0;
+    }
 
-      .startBtn {
-        font-family: $font-nunito;
-        margin-right: 8rem;
-        display: inline-block;
-        padding: 1.7rem 2rem;
-        border: none;
-        border-radius: 3rem;
-        color: $colorWhite;
-        background-color: $color2;
-        font-size: 1.8rem;
-        font-weight: 700;
-        cursor: pointer;
-        width: 15.2rem;
-      }
-
-      .startBtn:hover {
-        color: $background-1;
-        background-color: $background-2;
-      }
+    .startBtn:hover {
+      color: $background-2;
+      background-color: $background-1;
     }
 
     .bottom {
-      
       .blackText {
-        font-family: $font-roboto;
+        font-family: $font-pt;
         color: $color4;
-        font-size: 2.1rem;
-
+        font-size: 2.2rem;
+        line-height: 28.8px;
       }
 
       .listContainer {
@@ -74,7 +80,7 @@
         width: 0.6rem;
         height: 0.6rem;
         border-radius: 50%;
-        background-color: $color4; 
+        background-color: $color4;
         margin-right: 1rem;
       }
     }
