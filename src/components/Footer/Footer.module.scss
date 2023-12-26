@@ -67,7 +67,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 100px; /* Adjust the gap as needed */
+  gap: 10rem;
 }
 
 .sectionOne {
@@ -112,5 +112,6 @@
 .footer {
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
-  text-align: center; /* Center the text in the footer */
+  text-align: center;
+  font-size: 1.4rem;
 }
