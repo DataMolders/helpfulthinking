@@ -8,8 +8,8 @@ function Footer() {
   return (
     <div className={styles.main}>
       <div className={styles.container}>
-        <div className={styles.topContainer}>
-          <div className={styles.logoContainer}>
+        <div className={styles.sectionOne}>
+          <div className={styles.logo}>
             <Link href="#">
               <Image
                 src={logo}
@@ -18,6 +18,8 @@ function Footer() {
               />
             </Link>
           </div>
+        </div>
+        <div className={styles.sectionTwo}>
           <div className={styles.buttonsContainer}>
             <a>Funcionamiento</a>
             <a>Áreas de tratamiento</a>
@@ -25,12 +27,16 @@ function Footer() {
             <a>FAQ's</a>
             <a>Contacto</a>
           </div>
+        </div>
+        <div className={styles.sectionThree}>
           <div className={styles.contact}>
             <div className={styles.textTitle}>Contáctanos</div>
             <div className={styles.text}>hello@helpful-thinking.com</div>
           </div>
         </div>
-        <div className={styles.copyright}>© 2023 Day Care Services</div>
+        <div className={styles.footer}>
+          <div className={styles.copyright}>© 2023 Day Care Services</div>
+        </div>
       </div>
     </div>
   )
