@@ -8,6 +8,7 @@ import Equip from '@/components/Equip/Equip'
 import Help from '@/components/Help/Help'
 import Faqs from '@/components/Faqs/Faqs'
 import Footer from '@/components/Footer/Footer'
+import Leader from '@/components/Leader/Leader'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,6 +28,7 @@ export default function Home() {
           <Benefits />
           <Treatment />
           <Equip />
+          <Leader />
           <Help />
           <Faqs />
           <Footer />
