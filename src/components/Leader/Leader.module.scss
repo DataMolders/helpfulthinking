@@ -1,7 +1,104 @@
 @import "src/assets/scss/abstracts/_variables";
 
 .main {
-    width: 100%;
-    height: 100%;
-    background-color: $background-1;
+  width: 100%;
+  height: 100%;
+  background-color: $background-1;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1300px;
+  padding: 3rem 0 5rem 0;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.logoImage {
+  height: 30rem;
+  width: 30rem;
+}
+
+.descriptionBot {
+  font-family: $font-vietnam;
+  font-size: 1.8rem;
+  color: $color2;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: $font-pt;
+  font-size: 4.8rem;
+  letter-spacing: -0.1rem;
+  color: $background-2;
+  margin-bottom: 2.5rem;
+}
+
+.subtitle {
+  font-family: $font-nunito;
+  font-size: 2.1rem;
+  color: $background-2;
+  margin-bottom: 4rem;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.description {
+  font-family: $font-nunito;
+  font-size: 2.1rem;
+  color: $background-2;
+  line-height: 2.88rem;
+  margin-bottom: 5rem;
+}
+
+.vision {
+  font-family: $font-nunito;
+  color: $color2;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-family: $font-nunito;
+  margin-right: 8rem;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-style: solid;
+  border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+  border-color: $color2;
+  border-radius: 3.2rem;
+  color: $color2;
+  background-color: $background-1;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: $colorWhite;
+  background-color: $color2;
 }
