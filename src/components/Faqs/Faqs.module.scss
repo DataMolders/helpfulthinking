@@ -25,9 +25,10 @@
 .details {
   width: 360px;
   padding: 1rem;
-  border-radius: 8px;
-  background: white;
-  box-shadow: 4px 4px 3px black;
+  border-radius: 1rem;
+  background: $background-2;
+  border: solid;
+  border-color: $color5;
   margin-bottom: 2rem;
 }
 
@@ -37,4 +38,5 @@
   font-size: 2.1rem;
   text-align: center;
   max-width: 300px;
+  margin-top: 3rem;
 }
