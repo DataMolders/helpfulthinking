@@ -11,7 +11,7 @@
   background-color: $background-1;
   padding: 5rem 0 5rem 11.2rem;
   background-image: url("../../assets/images/picture1.png");
-  background-size: contain;
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: right; /* Center the background image */
 }
@@ -36,6 +36,9 @@
   font-family: $font-vietnam;
   font-size: 1.8rem;
   max-width: 46.7rem;
+  line-height: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .logoImage {
