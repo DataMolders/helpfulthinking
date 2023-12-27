@@ -1,13 +1,14 @@
 @import "src/assets/scss/abstracts/_variables";
 
 .main {
-  height: 56vh;
+  height: 100%;
   width: 100%;
   background-color: $background-1;
   color: $color1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 5rem 0;
 
   .container {
     .left {
