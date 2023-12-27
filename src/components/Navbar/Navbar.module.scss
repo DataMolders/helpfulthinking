@@ -5,6 +5,9 @@
   min-height: 12rem;
   font-family: $font-roboto;
   background-color: $background-1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   .container {
     display: flex;
