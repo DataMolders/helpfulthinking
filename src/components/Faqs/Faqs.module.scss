@@ -5,13 +5,13 @@
   height: 100%;
   background-color: $background-2;
   padding: 5rem 0 5rem 11.2rem;
-}
-
-.container {
   background-image: url("../../assets/images//spiral.png");
   background-size: 30%;
   background-repeat: no-repeat;
-  background-position: right; /* Center the background image */
+  background-position: right;
+}
+
+.container {
 }
 
 .title {
@@ -23,13 +23,39 @@
 }
 
 .details {
-  width: 360px;
+  width: 58rem;
   padding: 1rem;
   border-radius: 1rem;
   background: $background-2;
   border: solid;
   border-color: $color5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  overflow: hidden; 
+  transition: max-height 0.9s ease; 
+  max-height: 5rem; 
+}
+
+.details[open] {
+  max-height: 15rem; 
+}
+
+.summary {
+  cursor: pointer;
+}
+
+.summaryTitle {
+  display: inline;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-family: $font-nunito;
+  color: $color4;
+}
+
+.text {
+  margin: 2.3rem 0 0 0.5rem;
+  font-size: 1.8rem;
+  font-family: $font-nunito;
+  color: $color4;
 }
 
 .subtitle {
@@ -37,6 +63,15 @@
   color: $color5;
   font-size: 2.1rem;
   text-align: center;
-  max-width: 300px;
+  max-width: 50rem;
   margin-top: 3rem;
+}
+
+.mail {
+  font-family: $font-nunito;
+  color: $color5;
+  font-size: 2.1rem;
+  text-align: center;
+  max-width: 50rem;
+  font-weight: bold;
 }

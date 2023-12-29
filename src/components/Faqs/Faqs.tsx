@@ -10,40 +10,40 @@ function Faqs() {
                 <div className={styles.title}>FAQ</div>
                 <div className={styles.accordionContainer}>
                     <details className={styles.details}>
-                        <summary>
-                            <div>¿Qué es Helpful Thinking?</div>
+                        <summary className={styles.summary}>
+                            <div className={styles.summaryTitle}>¿Qué es Helpful Thinking?</div>
                         </summary>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p className={styles.text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </details>
                     <details className={styles.details}>
-                        <summary>
-                            <div>¿Cómo funciona Helpful Thinking?</div>
+                        <summary className={styles.summary}>
+                            <div className={styles.summaryTitle}>¿Cómo funciona Helpful Thinking?</div>
                         </summary>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p className={styles.text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </details>
                     <details className={styles.details}>
-                        <summary>
-                            <div>¿Cómo agendar mi primera cita?</div>
+                        <summary className={styles.summary}>
+                            <div className={styles.summaryTitle}>¿Cómo agendar mi primera cita?</div>
                         </summary>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p className={styles.text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </details>
                     <details className={styles.details}>
-                        <summary>
-                            <div>¿Cómo acudir a Helpful Thinking?</div>
+                        <summary className={styles.summary}>
+                            <div className={styles.summaryTitle}>¿Cómo acudir a Helpful Thinking?</div>
                         </summary>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <p className={styles.text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </details>
                     <details className={styles.details}>
-                        <summary>
-                            <div>¿La terapia en línea es efectiva?</div>
+                        <summary className={styles.summary}>
+                            <div className={styles.summaryTitle}>¿La terapia en línea es efectiva?</div>
                         </summary>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </details>
                 </div>
                 <div className={styles.subtitle}>
                     ¿No encuentras respuesta a tu pregunta? envíanos un email a
-                    hello@helpful-thinking.com
                 </div>
+                <div className={styles.mail}>hello@helpful-thinking.com</div>
             </div>
         </div>
     )
