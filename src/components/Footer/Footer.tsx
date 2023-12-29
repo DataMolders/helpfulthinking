@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="contacto">
       <div className={styles.container}>
         <div className={styles.sectionOne}>
           <div className={styles.logo}>

@@ -5,7 +5,7 @@ import styles from "./Faqs.module.scss"
 
 function Faqs() {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id="faqs">
             <div className={styles.container}>
                 <div className={styles.title}>FAQ</div>
                 <div className={styles.accordionContainer}>

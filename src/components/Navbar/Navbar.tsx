@@ -19,11 +19,11 @@ function Navbar() {
                     </Link>
                 </div>
                 <nav className={styles.navContainer}>
-                    <Link href="#">Funcionamiento</Link>
-                    <Link href="#">Áreas de tratamiento</Link>
-                    <Link href="#">Quiénes somos</Link>
-                    <Link href="#">FAQ's</Link>
-                    <Link href="#">Contacto</Link>
+                    <Link href="#funcionamiento">Funcionamiento</Link>
+                    <Link href="#tratamiento">Áreas de tratamiento</Link>
+                    <Link href="#equipo">Quiénes somos</Link>
+                    <Link href="#faqs">FAQ's</Link>
+                    <Link href="#contacto">Contacto</Link>
                 </nav>
                 <button className={styles.startBtn}>Empezar</button>
             </ul>

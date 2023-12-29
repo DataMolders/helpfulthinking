@@ -15,7 +15,7 @@ import treat10 from "@/assets/images/treat10.png"
 
 function Treatment() {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id="tratamiento">
             <div className={styles.container}>
                 <div className={styles.title}> Áreas de tratamiento </div>
                 <div className={styles.cardsContainer}>
