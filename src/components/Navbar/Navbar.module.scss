@@ -8,14 +8,48 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+
+  @include responsive("xxL") {
+    background-color: red;
+    min-height: 11rem;
+  }
+
+  @include responsive("xl") {
+    background-color: green;
+    min-height: 10rem;
+  }
+
+  @include responsive("laptopL") {
+    background-color: black;
+    min-height: 10rem;
+  }
 
   .container {
     display: flex;
     align-items: center;
+    width: 100%;
 
     .logoContainer {
-      margin: 1.8rem 0;
-      margin-left: 11.2rem;
+      padding: 2rem 2rem 2rem 11.2rem;
+
+      @include responsive("xxL") {
+        padding-left: 10.5rem;
+      }
+
+      @include responsive("xl") {
+        padding-left: 8.5rem;
+      }
+
+      @include responsive("laptopL") {
+        padding-left: 7.5rem;
+      }
+
+      .logoImage {
+        height: auto;
+        max-width: 25rem; /* MIRAR AQUI PARA LA IMAGEN */
+      }
     }
 
     .navContainer {
@@ -27,6 +61,20 @@
         font-family: $font-nunito;
         text-decoration: none;
         font-weight: 700;
+
+        @include responsive("xxL") {
+          font-size: 1.5rem;
+        }
+
+        @include responsive("xl") {
+          font-size: 1.4rem;
+          margin-right: 2.8rem;
+        }
+
+        @include responsive("laptopL") {
+          margin-right: 2.6rem;
+          font-size: 1.3rem;
+        }
       }
 
       a:hover {
@@ -46,6 +94,16 @@
       font-size: 1.8rem;
       font-weight: 700;
       cursor: pointer;
+
+      @include responsive("xxL") {
+        margin-right: 6.5rem;
+        font-size: 1.5rem;
+      }
+
+      @include responsive("xl") {
+        margin-right: 2.5rem;
+        font-size: 1.4rem;
+      }
     }
 
     .startBtn:hover {

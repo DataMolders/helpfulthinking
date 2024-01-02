@@ -11,21 +11,39 @@
 
   .container {
     margin-left: 11.2rem;
+
+    @include responsive("xxL") {
+      margin-left: 10.5rem;
+    }
+
+    @include responsive("xl") {
+      margin-left: 9.5rem;
+    }
+
+    @include responsive("laptop") {
+      margin-left: 9rem;
+    }
+
     .title {
       font-family: $font-pt;
       font-size: 4.8rem;
       letter-spacing: -0.1rem;
       color: $background-1;
-    }
+      margin-bottom: 5rem;
 
-    .margin {
-      margin-bottom: 3rem;
+      @include responsive("laptop") {
+        font-size: 4.6rem;
+      }
     }
 
     .text {
       font-family: $font-nunito;
       color: $background-1;
       font-size: 2.2rem;
+
+      @include responsive("laptop") {
+        font-size: 2rem;
+      }
     }
 
     .top {
@@ -35,8 +53,22 @@
       .stepContainer {
         margin-right: 12rem;
 
+        @include responsive("xxL") {
+          margin-right: 10.5rem;
+        }
+
         .logoImage {
           margin-bottom: 2rem;
+
+          @include responsive("xl") {
+            height: 15rem;
+            width: 26rem;
+          }
+
+          @include responsive("laptopL") {
+            height: 13rem;
+            width: 23rem;
+          }
         }
       }
     }
@@ -54,6 +86,10 @@
       cursor: pointer;
       width: 15.2rem;
       margin: 5rem 0 8rem 0;
+
+      @include responsive("laptop") {
+        font-size: 1.6rem;
+      }
     }
 
     .startBtn:hover {
@@ -67,6 +103,10 @@
         color: $color4;
         font-size: 2.2rem;
         line-height: 28.8px;
+
+        @include responsive ("laptop") {
+          font-size: 2rem;
+        }
       }
 
       .listContainer {

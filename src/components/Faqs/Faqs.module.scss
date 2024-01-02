@@ -9,6 +9,18 @@
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: right;
+
+  @include responsive("xxL") {
+    padding: 5rem 0 5rem 10.5rem;
+  }
+
+  @include responsive("xl") {
+    padding: 5rem 0 5rem 9.5rem;
+  }
+
+  @include responsive("laptop") {
+    padding: 5rem 0 5rem 9rem;
+  }
 }
 
 .title {
@@ -17,6 +29,10 @@
   letter-spacing: -0.1rem;
   color: $color5;
   margin-bottom: 6rem;
+
+  @include responsive("laptop") {
+    font-size: 4.6rem;
+  }
 }
 
 .details {
@@ -27,13 +43,13 @@
   border: solid;
   border-color: $color5;
   margin-bottom: 1rem;
-  overflow: hidden; 
-  transition: max-height 0.9s ease; 
-  max-height: 5rem; 
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+  max-height: 5rem;
 }
 
 .details[open] {
-  max-height: 15rem; 
+  max-height: 15rem;
 }
 
 .summary {
@@ -46,6 +62,10 @@
   font-size: 1.8rem;
   font-family: $font-nunito;
   color: $color4;
+
+  @include responsive("laptop") {
+    font-size: 1.6rem;
+  }
 }
 
 .text {
@@ -53,6 +73,9 @@
   font-size: 1.8rem;
   font-family: $font-nunito;
   color: $color4;
+  @include responsive("laptop") {
+    font-size: 1.6rem;
+  }
 }
 
 .subtitle {
@@ -62,6 +85,10 @@
   text-align: center;
   max-width: 50rem;
   margin-top: 3rem;
+
+  @include responsive("laptop") {
+    font-size: 2rem;
+  }
 }
 
 .mail {
@@ -71,4 +98,8 @@
   text-align: center;
   max-width: 50rem;
   font-weight: bold;
+
+  @include responsive("laptop") {
+    font-size: 2rem;
+  }
 }

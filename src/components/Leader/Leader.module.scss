@@ -37,6 +37,10 @@
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin-bottom: 0.5rem;
+
+  @include responsive("laptop") {
+    font-size: 1.7rem;
+  }
 }
 
 .title {
@@ -45,6 +49,10 @@
   letter-spacing: -0.1rem;
   color: $background-2;
   margin-bottom: 2.5rem;
+
+  @include responsive("laptop") {
+    font-size: 4.6rem;
+  }
 }
 
 .subtitle {
@@ -52,6 +60,10 @@
   font-size: 2.1rem;
   color: $background-2;
   margin-bottom: 4rem;
+
+  @include responsive("laptop") {
+    font-size: 2rem;
+  }
 }
 
 .boldText {
@@ -64,6 +76,10 @@
   color: $background-2;
   line-height: 2.88rem;
   margin-bottom: 5rem;
+
+  @include responsive("laptop") {
+    font-size: 2rem;
+  }
 }
 
 .vision {
@@ -75,6 +91,10 @@
   margin: 0 auto;
   max-width: 50rem;
   margin-bottom: 5rem;
+
+  @include responsive("laptop") {
+    font-size: 1.9rem;
+  }
 }
 
 .btnContainer {
@@ -96,6 +116,10 @@
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
+
+  @include responsive("laptop") {
+    font-size: 1.6rem;
+  }
 }
 
 .btn:hover {

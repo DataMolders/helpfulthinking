@@ -14,6 +14,18 @@
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: right; /* Center the background image */
+
+  @include responsive("xxL") {
+    padding: 5rem 0 5rem 10.5rem;
+  }
+
+  @include responsive("xl") {
+    padding: 5rem 0 5rem 9.5rem;
+  }
+
+  @include responsive("laptop") {
+    padding: 5rem 0 5rem 9rem;
+  }
 }
 
 .title {
@@ -21,6 +33,10 @@
   font-family: $font-pt;
   font-size: 4.8rem;
   margin-bottom: 2.5rem;
+
+  @include responsive("laptop") {
+    font-size: 4.6rem;
+  }
 }
 
 .description {
@@ -29,6 +45,10 @@
   font-size: 2.1rem;
   max-width: 46.7rem;
   margin-bottom: 2.5rem;
+
+  @include responsive("laptop") {
+    font-size: 2rem;
+  }
 }
 
 .descriptionBot {
@@ -39,6 +59,10 @@
   line-height: 22px;
   letter-spacing: 2px;
   font-weight: 600;
+
+  @include responsive("laptop") {
+    font-size: 1.7rem;
+  }
 }
 
 .logoImage {

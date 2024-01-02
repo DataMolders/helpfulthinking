@@ -10,18 +10,42 @@
   align-items: center;
   padding: 5rem 0;
 
+  @include responsive("xxL") {
+    padding: 4.8rem 0;
+  }
+
+  @include responsive("laptop") {
+    padding: 4rem 0;
+  }
+
   .container {
     .left {
-      margin-top: 2.2rem;
+      // margin-top: 2.2rem;
       margin-left: 11.2rem;
       max-width: 60rem;
       line-height: 5.8rem;
+
+      @include responsive("xxL") {
+        margin-left: 10.5rem;
+      }
+
+      @include responsive("xl") {
+        margin-left: 9.5rem;
+      }
+
+      @include responsive("laptop") {
+        margin-left: 9rem;
+      }
 
       .subtitle {
         font-family: $font-pt;
         font-size: 4.5rem;
         letter-spacing: 0.2rem;
         margin-bottom: 1.3rem;
+
+        @include responsive("laptop") {
+          font-size: 4rem;
+        }
       }
 
       .title {
@@ -31,6 +55,10 @@
         letter-spacing: -0.1rem;
         line-height: 8.8rem;
         margin-bottom: 0.5rem;
+
+        @include responsive("laptop") {
+          font-size: 7rem;
+        }
       }
 
       .description {
@@ -39,6 +67,10 @@
         font-weight: 600;
         letter-spacing: 0.2rem;
         margin-bottom: 0.7rem;
+
+        @include responsive("laptop") {
+          font-size: 2.8rem;
+        }
       }
 
       .startBtn {
