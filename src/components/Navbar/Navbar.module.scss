@@ -36,6 +36,11 @@
     min-height: 10rem;
   }
 
+  @include responsive("sm") {
+    background-color: orangered;
+    height: 8rem;
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -64,9 +69,18 @@
         padding-left: 5rem;
       }
 
+      @include responsive("sm") {
+        padding-left: 3rem;
+      }
+
       .logoImage {
         height: auto;
         max-width: 25rem; /* MIRAR AQUI PARA LA IMAGEN */
+
+        @include responsive("sm") {
+          height: 5rem;
+          width: 14rem;
+        }
       }
     }
 
@@ -96,6 +110,11 @@
 
         @include responsive("md") {
           margin-right: 2.4rem;
+          font-size: 1.2rem;
+        }
+
+        @include responsive("sm") {
+          margin-right: 1.5rem;
           font-size: 1.2rem;
         }
       }
@@ -130,6 +149,11 @@
 
       @include responsive("md") {
         margin-right: 2.4rem;
+        font-size: 1.2rem;
+      }
+
+      @include responsive("sm") {
+        margin-right: 1.8rem;
         font-size: 1.2rem;
       }
     }

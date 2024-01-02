@@ -8,6 +8,10 @@
   height: 100%;
   background-color: $background-3;
   padding: 7rem 0;
+
+  @include responsive("sm") {
+    padding: 6rem 2rem;
+  }
 }
 
 .container {
@@ -16,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .title {
@@ -28,6 +33,10 @@
 
   @include responsive("laptop") {
     font-size: 4.6rem;
+  }
+
+  @include responsive("sm") {
+    font-size: 4rem;
   }
 }
 
@@ -43,8 +52,16 @@
   font-weight: 700;
   cursor: pointer;
 
+  @include responsive("xxL") {
+    font-size: 1.5rem;
+  }
+
+  @include responsive("xl") {
+    font-size: 1.4rem;
+  }
+
   @include responsive("laptop") {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 

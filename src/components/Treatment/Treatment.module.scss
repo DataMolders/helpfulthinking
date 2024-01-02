@@ -25,12 +25,20 @@
   @include responsive("md") {
     padding: 5rem 5rem 5rem 7rem;
   }
+
+  @include responsive("sm") {
+    padding: 5rem;
+  }
 }
 
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @include responsive("sm") {
+    align-items: center;
+  }
 }
 
 .title {
@@ -48,6 +56,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @include responsive("sm") {
+    flex-direction: row;
+  }
 }
 
 .top,
@@ -56,6 +68,11 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5rem;
+
+  @include responsive("sm") {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card {
@@ -67,6 +84,7 @@
   margin-right: 3.5rem;
   height: 21.1rem;
   width: 23.6rem;
+
 }
 
 .iconImage {

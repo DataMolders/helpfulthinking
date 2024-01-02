@@ -18,6 +18,10 @@
     padding: 4rem 0;
   }
 
+  @include responsive("sm") {
+    padding: 3rem 0;
+  }
+
   .container {
     .left {
       // margin-top: 2.2rem;
@@ -39,6 +43,10 @@
 
       @include responsive("md") {
         margin-left: 7rem;
+      }
+
+      @include responsive("sm") {
+        margin-left: 5rem;
       }
 
       .subtitle {
