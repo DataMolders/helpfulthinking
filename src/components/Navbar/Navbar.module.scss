@@ -28,7 +28,7 @@
 
   @include responsive("laptop") {
     background-color: blue;
-    min-height: 10rem;
+    height: 12rem;
   }
 
   @include responsive("md") {
