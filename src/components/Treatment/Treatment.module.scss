@@ -17,6 +17,14 @@
   @include responsive ("xl") {
     padding: 5rem 5rem 5rem 9.5rem;
   }
+
+  @include responsive ("laptop") {
+    padding: 5rem 5rem 5rem 8rem;
+  }
+
+  @include responsive("md") {
+    padding: 5rem 5rem 5rem 7rem;
+  }
 }
 
 .container {

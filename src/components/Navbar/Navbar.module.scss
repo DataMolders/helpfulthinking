@@ -26,6 +26,16 @@
     min-height: 10rem;
   }
 
+  @include responsive("laptop") {
+    background-color: blue;
+    min-height: 10rem;
+  }
+
+  @include responsive("md") {
+    background-color: orange;
+    min-height: 10rem;
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -43,7 +53,15 @@
       }
 
       @include responsive("laptopL") {
-        padding-left: 7.5rem;
+        padding-left: 7.3rem;
+      }
+
+      @include responsive("laptop") {
+        padding-left: 6.3rem;
+      }
+
+      @include responsive("md") {
+        padding-left: 5rem;
       }
 
       .logoImage {
@@ -67,13 +85,18 @@
         }
 
         @include responsive("xl") {
-          font-size: 1.4rem;
           margin-right: 2.8rem;
+          font-size: 1.4rem;
         }
 
         @include responsive("laptopL") {
           margin-right: 2.6rem;
           font-size: 1.3rem;
+        }
+
+        @include responsive("md") {
+          margin-right: 2.4rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -103,6 +126,11 @@
       @include responsive("xl") {
         margin-right: 2.5rem;
         font-size: 1.4rem;
+      }
+
+      @include responsive("md") {
+        margin-right: 2.4rem;
+        font-size: 1.2rem;
       }
     }
 
