@@ -80,6 +80,7 @@
   @include responsive("sm") {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
   }
 }
 
@@ -93,9 +94,10 @@
   height: 21.1rem;
   width: 23.6rem;
 
+
   @include responsive("xlMb") {
     height: 18.1rem;
-    width: 19rem;
+    width: 15rem;
     margin-right: 0;
   }
 }

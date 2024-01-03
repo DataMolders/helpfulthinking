@@ -18,12 +18,16 @@
     padding: 4rem 0;
   }
 
-  @include responsive("sm") {
+  @include responsive("sm") { /* MIRAR SM para MOVILES GRANDES*/
     padding: 3rem 0;
   }
 
   @include responsive("xlMb") {
     padding: 2rem 0;
+  }
+
+  @include responsive("smMb") {
+    padding: 3rem 0;
   }
 
   .container {
@@ -49,7 +53,7 @@
         margin-left: 7rem;
       }
 
-      @include responsive("sm") {
+      @include responsive("sm") { 
         margin-left: 5rem;
       }
 

@@ -76,6 +76,10 @@
   @include responsive("xs") {
     width: 35rem;
   }
+
+  @include responsive("xlMb") {
+    width: 30rem;
+  }
 }
 
 .details[open] {

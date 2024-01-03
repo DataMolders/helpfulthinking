@@ -79,7 +79,8 @@
   }
 
   @include responsive("xlMb") {
-    font-size: 3.1rem;
+    font-size: 3.3rem;
+    text-align: center;
   }
 }
 
@@ -99,6 +100,7 @@
 
   @include responsive("xlMb") {
     font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -128,8 +130,8 @@
   }
 
   @include responsive("xlMb") {
-    max-width: 35rem;
-    font-size: 1.7rem;
+    max-width: 33rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -189,6 +191,7 @@
 
   @include responsive("laptop") {
     font-size: 1.3rem;
+    padding: 2rem 2rem;
   }
 
   @include responsive("sm") {

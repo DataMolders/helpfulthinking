@@ -9,6 +9,10 @@
   background-color: $background-3;
   padding: 7rem 0;
 
+  @include responsive("laptop") {
+    padding: 6rem 2rem;
+  }
+
   @include responsive("sm") {
     padding: 6rem 3rem;
   }
