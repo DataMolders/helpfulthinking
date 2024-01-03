@@ -10,15 +10,15 @@
   padding: 5rem 5rem 5rem 11.2rem;
   justify-content: center;
 
-  @include responsive ("xxL") {
+  @include responsive("xxL") {
     padding: 5rem 5rem 5rem 10.5rem;
   }
 
-  @include responsive ("xl") {
+  @include responsive("xl") {
     padding: 5rem 5rem 5rem 9.5rem;
   }
 
-  @include responsive ("laptop") {
+  @include responsive("laptop") {
     padding: 5rem 5rem 5rem 8rem;
   }
 
@@ -28,6 +28,10 @@
 
   @include responsive("sm") {
     padding: 5rem;
+  }
+
+  @include responsive("xlMb") {
+    padding: 3rem 1rem;
   }
 }
 
@@ -47,8 +51,12 @@
   letter-spacing: -0.1rem;
   margin-bottom: 6rem;
 
-  @include responsive ("laptop") {
+  @include responsive("laptop") {
     font-size: 4.6rem;
+  }
+
+  @include responsive("xlMb") {
+    font-size: 3.4rem;
   }
 }
 
@@ -85,12 +93,22 @@
   height: 21.1rem;
   width: 23.6rem;
 
+  @include responsive("xlMb") {
+    height: 18.1rem;
+    width: 19rem;
+    margin-right: 0;
+  }
 }
 
 .iconImage {
   height: 7.5rem;
   width: 5.5rem;
   margin-bottom: 2rem;
+
+  @include responsive("xlMb") {
+    height: 5.5rem;
+    width: 3.5rem;
+  }
 }
 
 .iconImage2 {
@@ -104,7 +122,11 @@
   font-weight: 600;
   text-align: center;
 
-  @include responsive ("laptop") {
+  @include responsive("laptop") {
     font-size: 1.8rem;
+  }
+
+  @include responsive("xlMb") {
+    font-size: 1.1rem;
   }
 }

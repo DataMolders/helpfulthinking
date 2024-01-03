@@ -42,6 +42,11 @@
   @include responsive("sm") {
     font-size: 4rem;
   }
+
+  @include responsive("xlMb") {
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 
 .startBtn {

@@ -39,6 +39,10 @@
       margin-left: 0;
     }
 
+    @include responsive("xlMb") {
+      padding: 0 2rem;
+    }
+
     .title {
       font-family: $font-pt;
       font-size: 4.8rem;
@@ -177,6 +181,10 @@
         @include responsive("sm") {
           font-size: 1.9rem;
         }
+
+        @include responsive("xlMb") {
+          font-size: 1.6rem;
+        }
       }
 
       .listContainer {
@@ -185,6 +193,10 @@
 
         @include responsive("sm") {
           margin-left: 4.5rem;
+        }
+
+        @include responsive("xlMb") {
+          margin-left: 2.5rem;
         }
       }
 

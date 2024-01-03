@@ -57,6 +57,10 @@
   @include responsive("laptop") {
     font-size: 1.7rem;
   }
+
+  @include responsive("xlMb") {
+    font-size: 1.3rem;
+  }
 }
 
 .title {
@@ -73,6 +77,10 @@
   @include responsive("xs") {
     font-size: 3.8rem;
   }
+
+  @include responsive("xlMb") {
+    font-size: 3.1rem;
+  }
 }
 
 .subtitle {
@@ -87,6 +95,10 @@
 
   @include responsive("xs") {
     font-size: 1.9rem;
+  }
+
+  @include responsive("xlMb") {
+    font-size: 1.5rem;
   }
 }
 
@@ -114,6 +126,11 @@
     max-width: 55rem;
     font-size: 1.9rem;
   }
+
+  @include responsive("xlMb") {
+    max-width: 35rem;
+    font-size: 1.7rem;
+  }
 }
 
 .vision {
@@ -128,6 +145,11 @@
 
   @include responsive("laptop") {
     font-size: 1.9rem;
+  }
+
+  @include responsive("xlMb") {
+    max-width: 38rem;
+    font-size: 1.7rem;
   }
 }
 

@@ -22,8 +22,8 @@
     padding: 3rem 0;
   }
 
-  @include responsive("xs") {
-    
+  @include responsive("xlMb") {
+    padding: 2rem 0;
   }
 
   .container {
@@ -53,6 +53,10 @@
         margin-left: 5rem;
       }
 
+      @include responsive("xlMb") {
+        margin-left: 2rem;
+      }
+
       .subtitle {
         font-family: $font-pt;
         font-size: 4.5rem;
@@ -65,6 +69,10 @@
 
         @include responsive("md") {
           font-size: 3.8rem;
+        }
+
+        @include responsive("xlMb") {
+          font-size: 3rem;
         }
       }
 
@@ -83,6 +91,10 @@
         @include responsive("md") {
           font-size: 6.8rem;
         }
+
+        @include responsive("xlMb") {
+          font-size: 5.5rem;
+        }
       }
 
       .description {
@@ -98,6 +110,10 @@
 
         @include responsive("md") {
           font-size: 2.7rem;
+        }
+
+        @include responsive("xlMb") {
+          font-size: 2rem;
         }
       }
 

@@ -68,6 +68,10 @@
   @include responsive("xs") {
     font-size: 3.8rem;
   }
+
+  @include responsive("xlMb") {
+    font-size: 3.4rem;
+  }
 }
 
 .description {
@@ -92,6 +96,11 @@
     max-width: 55rem;
     font-size: 1.9rem;
   }
+
+  @include responsive("xlMb") {
+    max-width: 37rem;
+    font-size: 1.7rem;
+  }
 }
 
 .descriptionBot {
@@ -111,6 +120,11 @@
     max-width: 32rem;
     font-size: 1.3rem;
     max-width: 70rem;
+  }
+
+  @include responsive("xlMb") {
+    max-width: 35rem;
+    text-align: center;
   }
 }
 
