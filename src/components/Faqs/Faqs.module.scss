@@ -29,6 +29,11 @@
   @include responsive("sm") {
     padding: 5rem 0 5rem 5rem;
   }
+
+  @include responsive("sm") {
+    padding-left: 4rem;
+    background-size: 25%;
+  }
 }
 
 .title {
@@ -61,6 +66,10 @@
 
   @include responsive("sm") {
     width: 40rem;
+  }
+
+  @include responsive("xs") {
+    width: 35rem;
   }
 }
 
