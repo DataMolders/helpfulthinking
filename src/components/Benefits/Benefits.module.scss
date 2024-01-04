@@ -58,6 +58,10 @@
       @include responsive("sm") {
         font-size: 4.3rem;
       }
+
+      @include responsive("smMb") {
+        font-size: 3.8rem;
+      }
     }
 
     .text {
@@ -74,7 +78,7 @@
       }
 
       @include responsive("sm") {
-        
+        font-size: 1.7rem;
       }
     }
 
@@ -185,6 +189,10 @@
 
         @include responsive("xlMb") {
           font-size: 1.6rem;
+        }
+
+        @include responsive("smMb") {
+          font-size: 1.3rem;
         }
       }
 

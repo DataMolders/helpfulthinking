@@ -62,6 +62,10 @@
   @include responsive("xlMb") {
     font-size: 3.4rem;
   }
+
+  @include responsive("smMb") {
+    font-size: 3rem;
+  }
 }
 
 .cardsContainer {
@@ -124,6 +128,11 @@
     height: 5.5rem;
     width: 3.5rem;
   }
+
+  @include responsive("smMb") {
+    height: 5rem;
+    width: 3rem;
+  }
 }
 
 .iconImage2 {
@@ -149,5 +158,10 @@
 
   @include responsive("xlMb") {
     font-size: 1.1rem;
+  }
+
+  @include responsive("smMb") {
+    font-size: 1rem;
+    width: auto;
   }
 }
