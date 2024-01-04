@@ -18,12 +18,8 @@
     padding: 4rem 0;
   }
 
-  @include responsive("sm") { /* MIRAR SM para MOVILES GRANDES*/
+  @include responsive("sm") {
     padding: 2rem;
-  }
-
-  @include responsive("xlMb") {
-    padding: 2rem 0;
   }
 
   @include responsive("smMb") {
@@ -32,7 +28,6 @@
 
   .container {
     .left {
-      // margin-top: 2.2rem;
       margin-left: 11.2rem;
       max-width: 60rem;
       line-height: 5.8rem;
@@ -53,15 +48,7 @@
         margin-left: 7rem;
       }
 
-      @include responsive("sm") { 
-        margin-left: 0;
-      }
-
-      @include responsive("xlMb") {
-        margin-left: 2rem;
-      }
-
-      @include responsive("smMb") {
+      @include responsive("sm") {
         margin-left: 0;
       }
 
@@ -166,7 +153,7 @@
         @include responsive("xxL") {
           font-size: 1.5rem;
         }
-  
+
         @include responsive("xl") {
           font-size: 1.4rem;
         }
