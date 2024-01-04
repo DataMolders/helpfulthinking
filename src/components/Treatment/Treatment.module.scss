@@ -27,7 +27,7 @@
   }
 
   @include responsive("sm") {
-    padding: 5rem;
+    padding: 5rem 2rem;
   }
 
   @include responsive("xlMb") {
@@ -55,6 +55,10 @@
     font-size: 4.6rem;
   }
 
+  @include responsive("sm") {
+    font-size: 3.7rem;
+  }
+
   @include responsive("xlMb") {
     font-size: 3.4rem;
   }
@@ -80,7 +84,6 @@
   @include responsive("sm") {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
   }
 }
 
@@ -94,6 +97,11 @@
   height: 21.1rem;
   width: 23.6rem;
 
+  @include responsive("sm") {
+    height: 20rem;
+    width: 18rem;
+    margin-right: 0;
+  }
 
   @include responsive("xlMb") {
     height: 18.1rem;
@@ -106,6 +114,11 @@
   height: 7.5rem;
   width: 5.5rem;
   margin-bottom: 2rem;
+
+  @include responsive("sm") {
+    height: 6.5rem;
+    width: 4.5rem;
+  }
 
   @include responsive("xlMb") {
     height: 5.5rem;
@@ -126,6 +139,12 @@
 
   @include responsive("laptop") {
     font-size: 1.8rem;
+  }
+
+  @include responsive("sm") {
+    font-size: 1.5rem;
+    width: 21rem;
+    padding: 1.5rem;
   }
 
   @include responsive("xlMb") {

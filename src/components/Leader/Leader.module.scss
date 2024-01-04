@@ -58,6 +58,10 @@
     font-size: 1.7rem;
   }
 
+  @include responsive("laptop") {
+    font-size: 1.6rem;
+  }
+
   @include responsive("xlMb") {
     font-size: 1.3rem;
   }
@@ -74,12 +78,17 @@
     font-size: 4.6rem;
   }
 
+  @include responsive("sm") {
+    font-size: 4rem;
+  }
+
   @include responsive("xs") {
-    font-size: 3.8rem;
+    font-size: 3.3rem;
+    padding: 0 1rem;
   }
 
   @include responsive("xlMb") {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
     text-align: center;
   }
 }
@@ -94,13 +103,17 @@
     font-size: 2rem;
   }
 
-  @include responsive("xs") {
+  @include responsive("sm") {
     font-size: 1.9rem;
+  }
+
+  @include responsive("xs") {
+    font-size: 1.8rem;
+    text-align: center;
   }
 
   @include responsive("xlMb") {
     font-size: 1.5rem;
-    text-align: center;
   }
 }
 
@@ -121,7 +134,7 @@
 
   @include responsive("sm") {
     text-align: center;
-    max-width: 70rem;
+    padding: 0 1rem;
   }
 
   @include responsive("xs") {

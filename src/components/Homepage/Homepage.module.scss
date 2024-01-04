@@ -19,7 +19,7 @@
   }
 
   @include responsive("sm") { /* MIRAR SM para MOVILES GRANDES*/
-    padding: 3rem 0;
+    padding: 2rem;
   }
 
   @include responsive("xlMb") {
@@ -54,7 +54,7 @@
       }
 
       @include responsive("sm") { 
-        margin-left: 5rem;
+        margin-left: 0;
       }
 
       @include responsive("xlMb") {
@@ -73,6 +73,10 @@
 
         @include responsive("md") {
           font-size: 3.8rem;
+        }
+
+        @include responsive("sm") {
+          font-size: 3.4rem;
         }
 
         @include responsive("xlMb") {
@@ -96,6 +100,10 @@
           font-size: 6.8rem;
         }
 
+        @include responsive("sm") {
+          font-size: 6rem;
+        }
+
         @include responsive("xlMb") {
           font-size: 5.5rem;
         }
@@ -114,6 +122,10 @@
 
         @include responsive("md") {
           font-size: 2.7rem;
+        }
+
+        @include responsive("sm") {
+          font-size: 2.4rem;
         }
 
         @include responsive("xlMb") {

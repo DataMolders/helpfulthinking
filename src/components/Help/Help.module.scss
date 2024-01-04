@@ -14,7 +14,7 @@
   }
 
   @include responsive("sm") {
-    padding: 6rem 3rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -44,12 +44,12 @@
   }
 
   @include responsive("sm") {
-    font-size: 4rem;
+    text-align: center;
+    font-size: 3.8rem;
   }
 
   @include responsive("xlMb") {
     font-size: 3.2rem;
-    text-align: center;
   }
 }
 
