@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from "./Navbar.module.scss"
 import Image from 'next/image'
 
@@ -6,11 +6,36 @@ import logo from "@/assets/images/HTlogo.png"
 import Link from 'next/link'
 
 function Navbar() {
+    const [isActive, setIsActive] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setIsDropdownOpen(false)
+        setIsActive((prevIsActive) => !prevIsActive);
+    };
+
+    const closeMobileNav = () => {
+        setIsActive(false);
+    };
+
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const updateScreenSize = () => {
+            setIsSmallScreen(window.innerWidth <= 768.98);
+        };
+
+        updateScreenSize();
+        window.addEventListener("resize", updateScreenSize);
+
+        return () => window.removeEventListener("resize", updateScreenSize);
+    }, []);
+
     return (
         <div className={styles.main}>
             <ul className={styles.container}>
                 <div className={styles.logoContainer}>
-                    <Link href="#">
+                    <Link href="#homepage">
                         <Image
                             src={logo}
                             alt="Logo"
@@ -18,14 +43,33 @@ function Navbar() {
                         />
                     </Link>
                 </div>
-                <nav className={styles.navContainer}>
-                    <Link href="#funcionamiento">Funcionamiento</Link>
-                    <Link href="#tratamiento">Áreas de tratamiento</Link>
-                    <Link href="#equipo">Quiénes somos</Link>
-                    <Link href="#faqs">FAQ's</Link>
-                    <Link href="#contacto">Contacto</Link>
+
+                {!isSmallScreen && (
+                    <React.Fragment>
+                        <nav className={styles.navContainer}>
+                            <Link href="#funcionamiento">Funcionamiento</Link>
+                            <Link href="#tratamiento">Áreas de tratamiento</Link>
+                            <Link href="#equipo">Quiénes somos</Link>
+                            <Link href="#faqs">FAQ's</Link>
+                            <Link href="#contacto">Contacto</Link>
+                        </nav>
+                        <button className={styles.startBtn}>Empezar</button>
+                    </React.Fragment>
+                )}
+
+                <button
+                    className={`${styles.hamburger} ${isActive ? styles.isActive : ''}`}
+                    onClick={handleMenuClick}
+                >
+                    <div className={styles.bar}></div>
+                </button>
+                <nav className={`${styles.mobileNav} ${isActive ? styles.isActive : ''}`}>
+                    <Link href="#funcionamiento" onClick={closeMobileNav}>Funcionamiento</Link>
+                    <Link href="#tratamiento" onClick={closeMobileNav}>Áreas de tratamiento</Link>
+                    <Link href="#equipo" onClick={closeMobileNav}>Quiénes somos</Link>
+                    <Link href="#faqs" onClick={closeMobileNav}>FAQ's</Link>
+                    <Link href="#contacto" onClick={closeMobileNav}>Contacto</Link>
                 </nav>
-                <button className={styles.startBtn}>Empezar</button>
             </ul>
         </div>
     )

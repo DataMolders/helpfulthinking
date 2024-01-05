@@ -10,34 +10,34 @@
   z-index: 1000;
   display: flex;
   align-items: center;
+  box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.1);
 
   @include responsive("xxL") {
-    background-color: red;
+    // background-color: red;
     min-height: 11rem;
   }
 
   @include responsive("xl") {
-    background-color: green;
+    // background-color: green;
     min-height: 10rem;
   }
 
   @include responsive("laptopL") {
-    background-color: black;
+    // background-color: black;
     min-height: 10rem;
   }
 
   @include responsive("laptop") {
-    background-color: blue;
+    // background-color: blue;
     height: 12rem;
   }
 
   @include responsive("md") {
-    background-color: orange;
+    // background-color: orange;
     min-height: 10rem;
   }
 
   @include responsive("sm") {
-    background-color: orangered;
     height: 8rem;
   }
 
@@ -45,6 +45,10 @@
     display: flex;
     align-items: center;
     width: 100%;
+
+    @include responsive("sm") {
+      justify-content: space-between;
+    }
 
     .logoContainer {
       padding: 2rem 2rem 2rem 11.2rem;
@@ -161,6 +165,87 @@
     .startBtn:hover {
       color: $background-1;
       background-color: $background-2;
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 3.5rem;
+    cursor: pointer;
+    margin-right: 3rem;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    @include responsive("smUp") {
+      display: none;
+    }
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.isActive:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.isActive:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.isActive .bar {
+    opacity: 0;
+  }
+
+  .mobileNav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-color: $background-1;
+    padding-top: 15rem;
+    transition: top 0.8s ease;
+    z-index: -1;
+
+    @include responsive("smUp") {
+      display: none;
+    }
+  }
+
+  .mobileNav.isActive {
+    top: 0;
+  }
+
+  .mobileNav a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 1.6rem;
+    text-align: center;
+    padding: 1.2rem 1.6rem;
+    font-size: 2.9rem;
+    color: $color1;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    transition: font-size 0.3s ease;
+
+    &:active {
+      color: $color2;
     }
   }
 }
