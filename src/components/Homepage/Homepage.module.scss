@@ -49,6 +49,18 @@
       }
 
       @include responsive("sm") {
+        margin-left: 5rem;
+      }
+
+      @include responsive("xlMb") {
+        margin-left: 2.5rem;
+      }
+
+      @include responsive("mdMb") {
+        margin-left: 1.5rem;
+      }
+
+      @include responsive("smMb") {
         margin-left: 0;
       }
 
