@@ -8,6 +8,25 @@ import Link from 'next/link'
 function Navbar() {
     const [isActive, setIsActive] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    // const [navbar, setNavbar] = useState(false);
+
+    // const changeBackground = () => {
+    //     console.log('Window scroll event detected:', window.scrollY);
+    //   };
+    
+    //   useEffect(() => {
+    //     console.log('Adding scroll event listener...');
+    //     window.addEventListener('scroll', changeBackground);
+    
+    //     // Simulate a scroll event to check if the function logs
+    //     console.log('Simulating scroll event...');
+    //     changeBackground();
+    
+    //     return () => {
+    //       console.log('Removing scroll event listener...');
+    //       window.removeEventListener('scroll', changeBackground);
+    //     };
+    //   }, []); 
 
     const handleMenuClick = () => {
         setIsDropdownOpen(false)
@@ -31,8 +50,14 @@ function Navbar() {
         return () => window.removeEventListener("resize", updateScreenSize);
     }, []);
 
+    // const changeBackground = () => {
+    //     console.log(window.scrollY)
+    // }
+
+    // window.addEventListener('scroll', changeBackground)
+
     return (
-        <div className={styles.main}>
+        <div className={`${styles.main} ${styles.active}`}>
             <ul className={styles.container}>
                 <div className={styles.logoContainer}>
                     <Link href="#homepage">

@@ -1,5 +1,6 @@
 @import "src/assets/scss/abstracts/_variables";
 
+
 .main {
   width: 100%;
   min-height: 12rem;
@@ -11,35 +12,39 @@
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.1);
-
+  
   @include responsive("xxL") {
     // background-color: red;
     min-height: 11rem;
   }
-
+  
   @include responsive("xl") {
     // background-color: green;
     min-height: 10rem;
   }
-
+  
   @include responsive("laptopL") {
     // background-color: black;
     min-height: 10rem;
   }
-
+  
   @include responsive("laptop") {
     // background-color: blue;
     height: 12rem;
   }
-
+  
   @include responsive("md") {
     // background-color: orange;
     min-height: 10rem;
   }
-
+  
   @include responsive("sm") {
     height: 8rem;
   }
+
+  // &.active {
+  //   background-color: blueviolet;
+  // }
 
   .container {
     display: flex;
