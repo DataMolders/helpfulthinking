@@ -1,6 +1,5 @@
 @import "src/assets/scss/abstracts/_variables";
 
-
 .main {
   width: 100%;
   min-height: 12rem;
@@ -12,46 +11,42 @@
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.1);
-  
+
   @include responsive("xxL") {
     // background-color: red;
     min-height: 11rem;
   }
-  
+
   @include responsive("xl") {
     // background-color: green;
     min-height: 10rem;
   }
-  
+
   @include responsive("laptopL") {
     // background-color: black;
     min-height: 10rem;
   }
-  
+
   @include responsive("laptop") {
     // background-color: blue;
     height: 12rem;
   }
-  
+
   @include responsive("md") {
     // background-color: orange;
     min-height: 10rem;
   }
-  
+
   @include responsive("sm") {
     height: 8rem;
   }
-
-  // &.active {
-  //   background-color: blueviolet;
-  // }
 
   .container {
     display: flex;
     align-items: center;
     width: 100%;
 
-    @include responsive("sm") {
+    @include responsive("md") {
       justify-content: space-between;
     }
 
@@ -147,8 +142,13 @@
       cursor: pointer;
 
       @include responsive("xxL") {
-        margin-right: 6.5rem;
+        margin-right: 3.5rem;
         font-size: 1.5rem;
+      }
+
+      @include responsive("xlUp") {
+        margin-right: 2.5rem;
+        font-size: 1.4rem;
       }
 
       @include responsive("xl") {
@@ -157,7 +157,7 @@
       }
 
       @include responsive("md") {
-        margin-right: 2.4rem;
+        margin-right: 2.5rem;
         font-size: 1.2rem;
       }
 
@@ -185,7 +185,7 @@
     outline: none;
     border: none;
 
-    @include responsive("smUp") {
+    @include responsive("mdUp") {
       display: none;
     }
   }

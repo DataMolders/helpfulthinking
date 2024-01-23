@@ -4,22 +4,46 @@
   height: 100%;
   width: 100%;
   background-color: $background-1;
+  background-image: url("../../assets/images/helpful-fondo.png");
+  background-size: auto 100%;
+  background-position: calc(100% + 49rem) center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+
   color: $color1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 5rem 0;
+  
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(190, 155, 128, 0.2);
+    z-index: -1;
+  }
 
   @include responsive("xxL") {
     padding: 4.8rem 0;
+    background-size: 83%;
+    background-position: calc(100% + 49rem) center;
   }
 
   @include responsive("laptop") {
     padding: 4rem 0;
+    background-size: 90%;
+    background-position: calc(100% + 44rem) center;
   }
 
   @include responsive("sm") {
     padding: 2rem;
+    background-image: none;
   }
 
   @include responsive("smMb") {
@@ -177,4 +201,21 @@
       }
     }
   }
+
+  // .modalBackdrop {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background-color: rgba(0, 0, 0, 0.9);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   z-index: 1000;
+  // }
+
+  // .modalContent {
+  //   max-width: 80%;
+  //   max-height: 90vh;}
 }
